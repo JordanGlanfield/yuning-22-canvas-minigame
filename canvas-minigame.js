@@ -29,7 +29,7 @@ class Circle {
         c.beginPath()
         c.arc(this.center.x, this.center.y, this.radius, 0, 2 * Math.PI)
         c.closePath()
-        c.fillStyle = 'yellow'
+        c.fillStyle = 'hotpink'
         c.fill()
     }
 
