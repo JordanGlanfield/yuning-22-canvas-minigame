@@ -1,9 +1,5 @@
 name: Upload Website
 
-strategy:
-    matrix:
-      node-version: ['18.x']
-
 on:
   push:
     branches:
@@ -12,6 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['18.x']
     steps:
     - name: Checkout
       uses: actions/checkout@v4
